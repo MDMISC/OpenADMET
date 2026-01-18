@@ -1,0 +1,10 @@
+# Single-Task Model Training
+
+## Data Source
+For training all single-task models, only the dataset provided by the competition organizers was used.
+
+## Method
+**TabM** (https://github.com/yandex-research/tabm)
+
+## Molecular Descriptors
+**Chemeleon Fingerprints**
