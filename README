@@ -7,4 +7,4 @@ For training all single-task models, only the dataset provided by the competitio
 **TabM** (https://github.com/yandex-research/tabm)
 
 ## Molecular Descriptors
-**Chemeleon Fingerprints**
+**Learned molecular embeddings extracted from a pretrained MPNN** (https://github.com/JacksonBurns/chemeleon)
