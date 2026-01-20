@@ -29,7 +29,7 @@ For downstream modeling, the **TabM** framework
 TabM is a deep probabilistic architecture for tabular data that relies on ensembling *k* independent
 submodels and specialized numerical embeddings. The model integrates several key components:
 
-- **Piecewise-linear embeddings (PLE)** for numerical features, enabling adaptive partitioning of
+- **Piecewise-linear embeddings** for numerical features, enabling adaptive partitioning of
   feature value ranges;
 - A compact **TabM-mini** backbone consisting of multiple computational blocks with residual
   connections and dropout regularization;
