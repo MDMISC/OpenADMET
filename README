@@ -22,17 +22,3 @@ TabM models were trained using an ensemble strategy with five different random i
 
 
 
-
-
-
-
-# Single-Task Model Training
-
-## Data Source
-For training all single-task models, only the dataset provided by the competition organizers was used.
-
-## Method
-**TabM** (https://github.com/yandex-research/tabm)
-
-## Molecular Descriptors
-**Learned molecular embeddings extracted from a pretrained MPNN** (https://github.com/JacksonBurns/chemeleon)
