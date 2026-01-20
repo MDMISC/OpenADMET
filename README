@@ -1,16 +1,16 @@
 # Methodology Report
 
-##Data Source
+## Data Source
 
 For training all single-task models, only the dataset provided by the competition organizers was used. No preliminary data preprocessing was performed.
 
-##Graph-Based Molecular Representation Learning
+## Graph-Based Molecular Representation Learning
 
 A pretrained Chemeleon Bond Message Passing Neural Network (MPNN) was used as the base molecular representation model. For each of the nine target properties, an independent MPNN model was fine-tuned using the corresponding training dataset. Each dataset was randomly split into training (90%) and validation (10%) sets.
 After training, the best-performing checkpoint for each target-specific MPNN was frozen and used exclusively as a feature extractor. The resulting molecular embeddings encode both structural information and target-dependent patterns learned during supervised fine-tuning.
 The same target-specific MPNN models were used to extract embeddings for the shared external test set. These embeddings served as numerical feature vectors for downstream regression modeling.
 
-##TabM Regression Model
+## TabM Regression Model
 
 For downstream modeling, the TabM model was employed. TabM is a deep probabilistic architecture designed for tabular data, based on ensembling k independent submodels and specialized numerical embeddings. The model combines several key components:
 Piecewise-linear embeddings for numerical features, enabling adaptive partitioning of feature value ranges;
